@@ -1,7 +1,7 @@
 html,
 body {
     margin: 0;
-    height: 100vh;
+    height: 100%;
     background-color: transparent;
 }
 #pinContainer {
@@ -34,6 +34,7 @@ body {
     font-weight: bold;
     text-shadow: 2px 2px 1px #1a0d0d, 1px 1px 2px brown;
     color: #341a12;
+    margin-left: 1.2%;
 }
 .first ul, .fourth-links ul {
     position:absolute;
@@ -81,7 +82,7 @@ body {
     color: #281412;
     transition: .5s;
 }
-.second h4,.second h5, .third h4, .fourth h1{
+.second h4,.second h5, .third h4, .fourth h1, .disclaimer{
     color: white;
 }
 .second .iphone .iphone-frame {
@@ -96,10 +97,10 @@ body {
 }
 #animate .iphone-content{
     /*position: absolute;*/
-    top: 12px;
+    top: -2px;
     left: -300px;
     width: 16.6em;
-    height: 31em;
+    height: 29.4em;
 }
 #animate .layer3 {
     opacity: 0;
@@ -263,4 +264,25 @@ span.icon {
 }
 .footer p {
     color: white;
+}
+@media only screen and (max-width: 500px)
+{
+    body,html {
+        height: 120%;
+    }
+    .first p {
+        font-size: 22px;
+    }
+    .first h4 {
+        font-size: 30px;
+    }
+    .first h5 {
+        font-size: 26px;
+    }
+    .first .borderMiddle {
+        border-left: none;
+    }
+    .first h1 {
+        margin-left: 0.1%;
+    }
 }
