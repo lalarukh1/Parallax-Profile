@@ -15,11 +15,11 @@ body {
     position: absolute;
 }
 .first , .second, .third, .fourth{
+    font-family: 'Vollkorn', serif;
     background-color: #afaeaf;
     background-image: linear-gradient(rgba(185, 165, 147, 0.17), rgba(52, 26, 18, 0.45)), url("https://nov17vas.files.wordpress.com/2012/04/the-best-top-desktop-brown-wallpapers-hd-brown-wallpaper-141.jpg");
     background-size: cover;
     background-position: center;
-    font-family: 'Unica One', cursive;
     box-shadow: inset 0 0 400px #231111;
     border-left: 4px double #231111;
     border-right: 4px double #231110;
@@ -31,6 +31,7 @@ body {
     border-left: thin solid brown;
 }
 .first h1 {
+    font-family: 'Unica One', cursive;
     font-weight: bold;
     text-shadow: 2px 2px 1px #1a0d0d, 1px 1px 2px brown;
     color: #341a12;
@@ -113,7 +114,9 @@ body {
     position: relative;
     bottom: 430px;
 }
-.third {
+
+.third embed {
+    border: thick solid #281412;
 }
 ::-webkit-scrollbar {
     width: 10px;
@@ -122,6 +125,20 @@ body {
 }
 .fourth {
     background-color: #e1e0c0;
+}
+.fourth #animate1 {
+    transition: transform 0.3s ease-out;
+}
+.fourth .zap {
+    transform: scale(2.5, 0);
+}
+.fourth .go-back {
+    color: white;
+    border: thin solid white;
+    padding: 0.5rem;
+}
+.fourth a:hover {
+    text-decoration: none;
 }
 /*Flat page*/
 .flat {
@@ -256,15 +273,14 @@ span.icon {
 .cards-row p {
     color: #e0ccb9;
 }
-.third embed {
-    border: thick solid #281412;
-}
+
 .footer {
     background-color: #A44704;
 }
 .footer p {
     color: white;
 }
+/*Responsive*/
 @media only screen and (max-width: 500px)
 {
     body,html {

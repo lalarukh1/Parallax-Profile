@@ -41,7 +41,7 @@
 
         // Text Effects
         var tween_2 = new TimelineMax();
-        tween_2.to($('.text'), 0.9, {y: '250%', ease:Linear.easeInOut});
+        tween_2.to($('.text'), 0.9, {y: '270%', ease:Linear.easeInOut});
         var introScene = new ScrollMagic.Scene({
             triggerElement: '.fourth',
             triggerHook: 0,
@@ -71,4 +71,10 @@
                 y: (relY - $this.height() / 5) / $this.height() * movement
             });
         }
+
+         // Go home
+        var scene_4 = new ScrollMagic.Scene({triggerElement: "#trigger1"})
+            .setClassToggle("#animate1", "zap")
+            .addTo(controller);
+
     });
